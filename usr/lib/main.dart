@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:couldai_user_app/features/splash/splash_screen.dart';
 import 'package:couldai_user_app/features/auth/login_screen.dart';
-import 'package:couldai_user_app/features/home/home_screen.dart';
+import 'package:couldai_user_app/features/auth/register_screen.dart';
+import 'package:couldai_user_app/features/layout/main_layout.dart';
 
 void main() {
   runApp(const MyApp());
@@ -38,7 +39,8 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => const SplashScreen(),
         '/login': (context) => const LoginScreen(),
-        '/home': (context) => const HomeScreen(),
+        '/register': (context) => const RegisterScreen(),
+        '/home': (context) => const MainLayout(), // Changed to MainLayout
       },
     );
   }
